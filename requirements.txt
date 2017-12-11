@@ -1,4 +1,2 @@
-kubernetes
 chaostoolkit-lib>=0.6.0
 pycodestyle
-pyyaml
