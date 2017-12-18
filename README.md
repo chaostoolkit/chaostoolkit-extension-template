@@ -20,7 +20,7 @@ $ pip install chaostoolkit-<your extension name here>
 
 That's it!
 
-Please explore the code to see existing provbes and actions.
+Please explore the code to see existing probes and actions.
 
 ## Configuration
 
