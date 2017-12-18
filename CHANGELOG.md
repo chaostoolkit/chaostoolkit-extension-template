@@ -12,3 +12,4 @@
 
 -   Initial release
 -   Added Travis CI
+-   Added empty example tests for probes and actions

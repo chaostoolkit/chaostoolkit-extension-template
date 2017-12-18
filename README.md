@@ -28,6 +28,14 @@ Please explore the code to see existing probes and actions.
 
 <Specify any extra configuration your extension relies on here>
 
+## Test
+
+To run the tests for the project execute the following:
+
+```
+$ pytest
+```
+
 ## Contribute
 
 If you wish to contribute more functions to this package, you are more than
