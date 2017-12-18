@@ -1,5 +1,7 @@
 # Chaos Toolkit Extension Template
 
+[![Build Status](https://travis-ci.org/chaostoolkit/chaostoolkit-extension-template.svg?branch=master)](https://travis-ci.org/chaostoolkit/chaostoolkit-extension-template)
+
 This project should be used as a starting point to create activities, such as probes and actions, you can call from
 your experiments through the Chaos Toolkit.
 
@@ -25,6 +27,14 @@ Please explore the code to see existing probes and actions.
 ## Configuration
 
 <Specify any extra configuration your extension relies on here>
+
+## Test
+
+To run the tests for the project execute the following:
+
+```
+$ pytest
+```
 
 ## Contribute
 
