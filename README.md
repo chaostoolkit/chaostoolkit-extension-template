@@ -1,11 +1,14 @@
 # Chaos Toolkit Extension Template
 
 [![Build Status](https://travis-ci.org/chaostoolkit/chaostoolkit-extension-template.svg?branch=master)](https://travis-ci.org/chaostoolkit/chaostoolkit-extension-template)
+[![Requirements Status](https://requires.io/github/chaostoolkit/chaostoolkit-extension-template/requirements.svg?branch=master)](https://requires.io/github/chaostoolkit/chaostoolkit-extension-template/requirements/?branch=master)
 
 This project should be used as a starting point to create activities, such as probes and actions, you can call from
 your experiments through the Chaos Toolkit.
 
 ## Install
+
+This package requires Python 3.5+
 
 To be used from your experiment, this package must be installed in the Python
 environment where [chaostoolkit][] already lives.
