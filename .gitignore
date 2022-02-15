@@ -102,3 +102,5 @@ ENV/
 
 .DS_Store
 junit-test-results.xml
+
+.pytest_cache/
