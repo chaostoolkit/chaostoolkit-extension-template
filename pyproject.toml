@@ -57,6 +57,7 @@ dev = [
     "coverage>=7.2.7",
     "isort>=5.11.5",
     "mypy>=1.4.1",
+    "bandit>=1.7.5",
 ]
 
 [tool.black]
