@@ -25,6 +25,10 @@ jobs:
           cache: false
           prerelease: true
 
+      - name: Install dependencies
+        run: |
+          cat pdm.lock
+
       - name: Ensure lock file is up to date
         run: |
           pdm lock --check
