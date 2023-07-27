@@ -37,6 +37,8 @@ documentation = "https://chaostoolkit.org"
 repository = "https://github.com/chaostoolkit/chaostoolkit-extension-template"
 changelog = "https://github.com/chaostoolkit/chaostoolkit-extension-template/blob/master/CHANGELOG.md"
 
+[tool]
+
 [tool.pdm.dev-dependencies]
 dev = [
     "ruff>=0.0.280",
