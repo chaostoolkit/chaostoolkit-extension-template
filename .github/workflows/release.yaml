@@ -12,6 +12,7 @@ on:
 jobs:
   release-to-pypi:
     runs-on: ubuntu-22.04
+    environment: ci
     steps:
     - uses: actions/checkout@v3
     - name: Set up PDM
@@ -25,7 +26,7 @@ jobs:
       run: |
         pdm publish
       env:
-        PDM_PUBLISH_USERNAME: __token__
+        PDM_PUBLISH_USERNAME: chaostoolkit
         PDM_PUBLISH_PASSWORD: ${{ secrets.PYPI_PWD }}
 
     - name: Upload packages as artifacts
