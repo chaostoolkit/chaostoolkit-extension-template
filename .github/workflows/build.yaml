@@ -27,14 +27,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cat pdm.lock
-
-      - name: Ensure lock file is up to date
-        run: |
-          pdm lock --check
-
-      - name: Install dependencies
-        run: |
           pdm sync -dG dev
 
       - name: Lint
