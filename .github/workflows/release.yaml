@@ -12,7 +12,9 @@ on:
 jobs:
   release-to-pypi:
     runs-on: ubuntu-22.04
-    environment: ci
+    environment: release
+    permissions:
+      id-token: write
     steps:
     - uses: actions/checkout@v3
     - name: Set up PDM
@@ -22,12 +24,12 @@ jobs:
         cache: false
         prerelease: true
 
-    - name: Publish wheels
+    - name: Build package
       run: |
-        pdm publish
-      env:
-        PDM_PUBLISH_USERNAME: chaostoolkit
-        PDM_PUBLISH_PASSWORD: ${{ secrets.PYPI_PWD }}
+        pdm build
+
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
 
     - name: Upload packages as artifacts
       uses: actions/upload-artifact@v2-preview
