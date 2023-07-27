@@ -12,25 +12,23 @@ on:
 jobs:
   release-to-pypi:
     needs: [check-release]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v1
+    - uses: actions/checkout@v3
+    - name: Set up PDM
+      uses: pdm-project/setup-pdm@v3
       with:
-        python-version: '3.7'
-    - name: Install dependencies
+        python-version: 3.7
+        cache: false
+        prerelease: true
+
+    - name: Publish wheels
       run: |
-        python -m pip install --upgrade pip
-        pip install -U setuptools wheel twine
-    - name: Build and publish
+        pdm publish
       env:
-        TWINE_USERNAME: chaostoolkit
-        TWINE_PASSWORD: ${{ secrets.PYPI_PWD }}
-      run: |
-        python3 setup.py release
-        twine upload dist/*
-    # push artifacts for other jobs to use
+        PDM_PUBLISH_USERNAME: __token__
+        PDM_PUBLISH_PASSWORD: ${{ secrets.PYPI_PWD }}
+
     - name: Upload packages as artifacts
       uses: actions/upload-artifact@v2-preview
       with:

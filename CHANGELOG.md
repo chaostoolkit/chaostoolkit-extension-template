@@ -2,7 +2,15 @@
 
 ## [Unreleased][]
 
-[Unreleased]: https://github.com/chaostoolkit/chaostoolkit-extension-template/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/chaostoolkit/chaostoolkit-extension-template/compare/0.3.0...HEAD
+
+## [0.3.0][]
+
+[0.3.0]: https://github.com/chaostoolkit/chaostoolkit-extension-template/compare/0.2.0...0.3.0
+
+### Changed
+
+-   Switched to PDM away from pip to build the package
 
 ## [0.2.0][]
 

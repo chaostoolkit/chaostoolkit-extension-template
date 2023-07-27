@@ -23,6 +23,7 @@ environment where [chaostoolkit][] already lives.
 $ pip install chaostoolkit-<your extension name here>
 ```
 
+
 ## Usage
 
 <Explain your probes and actions usage from the experiment.json here>
@@ -40,23 +41,23 @@ Please explore the code to see existing probes and actions.
 To run the tests for the project execute the following:
 
 ```
-$ pytest
+$ pdm run test
 ```
 
 ### Formatting and Linting
 
-We use a combination of [`black`][black], [`flake8`][flake8], and [`isort`][isort]
+We use a combination of [`black`][black], [`ruff`][ruff], and [`isort`][isort]
 to both lint and format this repositories code.
 
 [black]: https://github.com/psf/black
-[flake8]: https://github.com/PyCQA/flake8
+[ruff]: https://github.com/astral-sh/ruff
 [isort]: https://github.com/PyCQA/isort
 
 Before raising a Pull Request, we recommend you run formatting against your
 code with:
 
 ```console
-$ make format
+$ pdm run format
 ```
 
 This will automatically format any code that doesn't adhere to the formatting
@@ -65,7 +66,7 @@ standards.
 As some things are not picked up by the formatting, we also recommend you run:
 
 ```console
-$ make lint
+$ pdm run lint
 ```
 
 To ensure that any unused import statements/strings that are too long, etc.
@@ -79,3 +80,7 @@ usual [PEP 8][pep8] code style, sprinkling with tests and submit a PR for
 review.
 
 [pep8]: https://pycodestyle.readthedocs.io/en/latest/
+
+To contribute to this project, you will also need to install [pdm][].
+
+[pdm]: https://pdm.fming.dev/latest/

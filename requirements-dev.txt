@@ -1,8 +1,0 @@
-requests-mock
-coverage
-pytest~=6.2; python_version >= '3.6'
-pytest-cov
-pytest-sugar
-black
-isort
-flake8
