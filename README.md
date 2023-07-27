@@ -75,10 +75,10 @@ are also picked up.
 
 If you wish to contribute more functions to this package, you are more than
 welcome to do so. Please, fork this project, make your changes following the
-usual [PEP 8][pep8] code style, sprinkling with tests and submit a PR for
+usual [black][blackstyle] code style, sprinkling with tests and submit a PR for
 review.
 
-[pep8]: https://pycodestyle.readthedocs.io/en/latest/
+[blackstyle]: https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html
 
 To contribute to this project, you will also need to install [pdm][].
 
