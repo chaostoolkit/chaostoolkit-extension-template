@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-            fetch-depth: 0
+          fetch-depth: 0
 
       - name: Set up PDM
         uses: pdm-project/setup-pdm@v3
@@ -24,7 +24,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: false
           prerelease: true
-      
+
       - name: Ensure lock file is up to date
         run: |
           pdm lock --check
