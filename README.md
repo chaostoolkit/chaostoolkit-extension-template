@@ -3,8 +3,7 @@
 [![Version](https://img.shields.io/pypi/v/chaostoolkit-my-extension.svg)](https://img.shields.io/pypi/v/chaostoolkit-lib.svg)
 [![License](https://img.shields.io/pypi/l/chaostoolkit-my-extension.svg)](https://img.shields.io/pypi/l/chaostoolkit-lib.svg)
 
-![Build](https://github.com/chaostoolkit/chaostoolkit-lib/workflows/Build/badge.svg)
-[![codecov](https://codecov.io/gh/chaostoolkit/chaostoolkit-my-extension/branch/master/graph/badge.svg)](https://codecov.io/gh/chaostoolkit/chaostoolkit-lib)
+[![Build, Test, and Lint](https://github.com/chaostoolkit/chaostoolkit-extension-template/actions/workflows/build.yaml/badge.svg)](https://github.com/chaostoolkit/chaostoolkit-extension-template/actions/workflows/build.yaml)
 [![Python versions](https://img.shields.io/pypi/pyversions/chaostoolkit-my-extension.svg)](https://www.python.org/)
 
 This project should be used as a starting point to create your own
